@@ -34,7 +34,8 @@ Map.addLayer(p50_2005, {bands: ['B4', 'B3', 'B2'], max: 255}, 'LT5 TOA 2005 medi
 
 
 // Export composites
-// the region you want to export (var roi) can be drawn as a polygon directly in the EarthEngine editor
+// the region you want to export (var roi) has to be drawn as a polygon directly in the EarthEngine editor
+// or imported as a FusionTable
 Export.image(p50_2005, 'LT5_TOA_2005_p50_RRD', {
   scale: 30,
   region: roi
